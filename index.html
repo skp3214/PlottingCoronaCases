@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="index.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
+    <title>CoronaCases</title>
+</head>
+
+<body>
+    <div id="theme">
+        <h4>Select theme</h4>
+        <select id="themeSelect">
+            <option value="mapbox://styles/mapbox/streets-v11">Streets</option>
+            <option value="mapbox://styles/mapbox/outdoors-v11">Outdoors</option>
+            <option value="mapbox://styles/mapbox/light-v10">Light</option>
+            <option value="mapbox://styles/mapbox/satellite-v9">Satellite</option>
+            <option value="mapbox://styles/mapbox/satellite-streets-v11">Satellite with Streets</option>
+            <option value="mapbox://styles/mapbox/traffic-day-v2">Traffic Day</option>
+            <option value="mapbox://styles/mapbox/traffic-night-v2">Traffic Night</option>
+            <option value="mapbox://styles/mapbox/dark-v10">Dark (Monochrome)</option>
+        </select>
+    </div>
+    <div id='map'></div>
+
+</body>
+
+
+<script src='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js'></script>
+<script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiaGFycnkxMjM0OTgiLCJhIjoiY2s4OXh1c3BqMGFsZzNvbXA3YmYyaGFhYSJ9.wmVMiMxlSqpzJPsj-UXr3Q';
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11',
+        zoom: 1,
+        center: [0, 20]
+    });
+
+    var themeSelect = document.getElementById('themeSelect');
+
+    themeSelect.addEventListener('change', function () {
+        var selectedStyle = themeSelect.value;
+        map.setStyle(selectedStyle);
+    });
+</script>
+
+<script src="index.js"></script>
+
+</html>

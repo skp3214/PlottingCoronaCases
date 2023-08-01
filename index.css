@@ -1,0 +1,25 @@
+
+
+#theme{
+    width: 100vw;
+    height: 40px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#themeSelect{
+    /* width: 100vw; */
+    height: 25px;
+    outline:none;
+    border: 2px solid rgb(255, 51, 0);
+    background-color: aqua;
+    border-radius: 8px;
+}
+h4{
+    color: aliceblue;
+    margin-right: 10px;
+}
+
+
