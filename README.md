@@ -14,5 +14,6 @@
 
 ![image](https://github.com/skp3214/PlottingCoronaCases/assets/95349420/b27fad5b-5d96-465c-a6c4-936c42775d08)
 
-![image](https://github.com/skp3214/PlottingCoronaCases/assets/95349420/fcfec72b-043d-45a9-be00-76067970cb4a)
+![image](https://github.com/skp3214/PlottingCoronaCases/assets/95349420/e12f9f27-9da2-4adb-b89c-6249f16bee27)
+
 
